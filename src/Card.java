@@ -3,10 +3,21 @@ public class Card {
     public int value;
     public String name;
 
-    public Card(String psuit, int pvalue, int pname) {
+    public Card(int psuit, int pvalue, int pname) {
+        if (psuit == 0){
+            suit = "hearts";
+        }
+        else if(psuit == 1){
+            suit = "Diamonds";
+        }
+        else if (psuit == 2){
+            suit = "Clubs";
+        }
+        else if (psuit == 3){
+            suit = "Spades";
+        }
         value = pvalue;
         // name = pname;
-        suit = psuit;
         if (pname == 0) {
             name = "Ace";
             value = 11;
@@ -20,6 +31,10 @@ public class Card {
         else if (pname == 3) {
             name = "4";
             value = 4;
+        }
+        else if (pname == 4){
+            name = "5";
+            value = 5;
         }
         else if (pname == 5) {
             name = "6";

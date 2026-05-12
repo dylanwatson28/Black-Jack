@@ -3,6 +3,11 @@ public class Dealer {
     public int cardTotal;
     public boolean isBust;
     public Card[] hand;
+
+    public Dealer(){
+
+    }
+
     public void hit(){
 
     }
