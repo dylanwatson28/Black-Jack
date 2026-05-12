@@ -3,20 +3,58 @@ public class Card {
     public int value;
     public String name;
 
-    public Card(String psuit, int pvalue, int pname){
+    public Card(String psuit, int pvalue, int pname) {
         value = pvalue;
-       // name = pname;
+        // name = pname;
         suit = psuit;
-        if (pname == 0){
+        if (pname == 0) {
             name = "Ace";
             value = 11;
-        }
-        else if (pname == 1){
+        } else if (pname == 1) {
             name = "2";
             value = 2;
+        } else if (pname == 2) {
+            name = "3";
+            value = 3;
+        }
+        else if (pname == 3) {
+            name = "4";
+            value = 4;
+        }
+        else if (pname == 5) {
+            name = "6";
+            value = 6;
+        }
+        else if (pname == 6) {
+            name = "7";
+            value = 7;
+        }
+        else if (pname == 7) {
+            name = "8";
+            value = 8;
+        }
+        else if (pname == 8) {
+            name = "9";
+            value = 9;
+        }
+        else if (pname == 9) {
+            name = "10";
+            value = 10;
+        }
+        else if (pname == 10) {
+            name = "Jack";
+            value = 10;
+        }
+        else if (pname == 11) {
+            name = "Queen";
+            value = 10;
+        }
+        else if (pname == 12) {
+            name = "King";
+            value = 10;
         }
     }
-    public void printInfo(){
-        System.out.println("the " + name + " of " + suit + " has a value of " + value + " points");
+        public void printInfo () {
+            System.out.println("the " + name + " of " + suit + " has a value of " + value + " points");
+        }
     }
-}
