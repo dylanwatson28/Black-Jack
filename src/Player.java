@@ -6,11 +6,15 @@ public class Player {
     public String name;
 
     public Player(){
-        cardTotal = 2;
+        cardTotal = 0;
         isBust = false;
         isHit = true;
         name = "me";
-        for (int x = 0; x < 2; x++){
+        hand = new Card[2];
+    }
+    public void printInfo(){
+        System.out.println("Hello " + name + " you have " + cardTotal + " total cards and " + hand + " cards in the deck");
+        for (int x = 0; x < hand.length; x++) {
             hand[x].printInfo();
         }
     }

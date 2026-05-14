@@ -17,13 +17,15 @@ public class BasicGameApp {
             for (int x = 0; x < 13; x++) {
                 deck[counter] = new Card(y, 10, x);
                 counter++;
-              //  deck[x].printInfo();
+              //  deck[x].printInfo();d
             }
         }
         shuffle();
         printDeck();
         me = new Player();
         d = new Dealer();
+        me.printInfo();
+        d.printInfo();
     }
 
     public void compare(){
