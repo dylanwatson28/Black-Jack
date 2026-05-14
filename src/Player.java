@@ -6,14 +6,14 @@ public class Player {
     public String name;
 
     public Player(){
-        cardTotal = 0;
+        cardTotal = 2;
         isBust = false;
         isHit = true;
         name = "me";
         hand = new Card[2];
     }
     public void printInfo(){
-        System.out.println("Hello " + name + " you have " + cardTotal + " total cards and " + hand + " cards in the deck");
+        System.out.println("Hello you have " + cardTotal + " total cards in the deck");
         for (int x = 0; x < hand.length; x++) {
             hand[x].printInfo();
         }
@@ -24,5 +24,11 @@ public class Player {
     }
     public void stand(){
 
+    }
+
+    public void calculateTotal() {
+        for (int f = 0; f < hand.length; f++){
+            cardTotal += hand[f].value;
+        }
     }
 }

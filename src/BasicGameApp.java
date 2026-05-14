@@ -1,3 +1,4 @@
+import java.util.Scanner;
 public class BasicGameApp {
     public Card[] deck;
     public Player me;
@@ -24,6 +25,13 @@ public class BasicGameApp {
         printDeck();
         me = new Player();
         d = new Dealer();
+        me.hand[0] = deck[0];
+        me.hand[1] = deck[1];
+        me.calculateTotal();
+        Scanner s = new Scanner(System.in);
+        System.out.println("What is your name?");
+        String name = s.nextLine();
+        System.out.println(name);
         me.printInfo();
         d.printInfo();
     }
