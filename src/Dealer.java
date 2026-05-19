@@ -17,7 +17,12 @@ public class Dealer {
             hand[x].printInfo();
         }
     }
-
+    public void calculateTotal() {
+        cardTotal = 0;
+        for (int f = 0; f < hand.length; f++){
+            cardTotal += hand[f].value;
+        }
+    }
     public void hit(){
 
     }

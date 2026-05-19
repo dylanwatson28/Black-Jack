@@ -27,6 +27,7 @@ public class Player {
     }
 
     public void calculateTotal() {
+        cardTotal = 0;
         for (int f = 0; f < hand.length; f++){
             cardTotal += hand[f].value;
         }

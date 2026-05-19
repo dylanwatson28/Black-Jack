@@ -28,6 +28,11 @@ public class BasicGameApp {
         me.hand[0] = deck[0];
         me.hand[1] = deck[1];
         me.calculateTotal();
+        d.calculateTotal();
+        d.hand[0] = deck[2];
+        d.hand[1] = deck[3];
+
+
         Scanner s = new Scanner(System.in);
         System.out.println("What is your name?");
         String name = s.nextLine();
