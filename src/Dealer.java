@@ -25,6 +25,8 @@ public class Dealer {
     }
     public void hit(){
 
+
+
     }
     public void stand(){
 

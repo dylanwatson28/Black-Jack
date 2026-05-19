@@ -27,10 +27,11 @@ public class BasicGameApp {
         d = new Dealer();
         me.hand[0] = deck[0];
         me.hand[1] = deck[1];
-        me.calculateTotal();
-        d.calculateTotal();
         d.hand[0] = deck[2];
         d.hand[1] = deck[3];
+        me.calculateTotal();
+        d.calculateTotal();
+
 
 
         Scanner s = new Scanner(System.in);
@@ -39,6 +40,9 @@ public class BasicGameApp {
         System.out.println(name);
         me.printInfo();
         d.printInfo();
+        System.out.println("Do you want to hit?");
+        String hit = s.nextLine();
+        System.out.println(hit);
     }
 
     public void compare(){
