@@ -34,6 +34,7 @@ public class BasicGameApp {
 
 
 
+
         Scanner s = new Scanner(System.in);
         System.out.println("What is your name?");
         String name = s.nextLine();
@@ -43,6 +44,9 @@ public class BasicGameApp {
         System.out.println("Do you want to hit?");
         String hit = s.nextLine();
         System.out.println(hit);
+        if (hit.equals("yes")){
+            me.hit(deck[4]);
+        }
     }
 
     public void compare(){

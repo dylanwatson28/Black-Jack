@@ -1,6 +1,5 @@
 public class Player {
     public int cardTotal;
-    int hit;
     public boolean isBust;
     public boolean isHit;
     public Card[] hand;
@@ -20,10 +19,15 @@ public class Player {
         }
     }
 
-    public void hit(){
+    public void hit(Card p){
+        p.printInfo();
         if (isHit == true){
-            for (int x = 0; x < hit.length; x++){
-                cardTotal += hit[x].value;
+            hand[2] = p;
+
+
+            for (int x = 0; x < hand.length; x++){
+                cardTotal += hand[x].value;
+
             }
         }
 
