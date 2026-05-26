@@ -21,8 +21,12 @@ public class Player {
 
     public void hit(Card p){
         p.printInfo();
+        Card[] spencer = hand;
+        hand = new Card[3];
         if (isHit == true){
             hand[2] = p;
+            hand[0] = spencer[0];
+            hand[1] = spencer[1];
 
 
             for (int x = 0; x < hand.length; x++){
@@ -33,6 +37,9 @@ public class Player {
 
     }
     public void stand(){
+        printInfo();
+
+
 
     }
 

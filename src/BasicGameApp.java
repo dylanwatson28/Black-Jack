@@ -46,6 +46,7 @@ public class BasicGameApp {
         System.out.println(hit);
         if (hit.equals("yes")){
             me.hit(deck[4]);
+            me.stand();
         }
     }
 
