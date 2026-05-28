@@ -4,6 +4,8 @@ public class Player {
     public boolean isHit;
     public Card[] hand;
     public String name;
+    public int cardCount = 0;
+    public int total;
 
     public Player(){
         cardTotal = 2;
@@ -20,19 +22,10 @@ public class Player {
     }
 
     public void hit(Card p){
-        p.printInfo();
-        Card[] spencer = hand;
-        hand = new Card[3];
-        if (isHit == true){
-            hand[2] = p;
-            hand[0] = spencer[0];
-            hand[1] = spencer[1];
+        public void hit(Card p){
 
-
-            for (int x = 0; x < hand.length; x++){
-                cardTotal += hand[x].value;
-
-            }
+            hand[cardCount] = p;
+            cardCount++;
         }
 
     }

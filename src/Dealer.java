@@ -3,6 +3,7 @@ public class Dealer {
     public int cardTotal;
     public boolean isBust;
     public Card[] hand;
+    public int total;
 
     public Dealer(){
         isOver15 = false;
